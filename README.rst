@@ -28,6 +28,8 @@ Performance notes
 Scripts
 -------
 
+* It works with python 3.5 and tensorflow 1.4
+
 * ``prepare-data.py``: reads a text file and create numpy files that can be used to train an autoencoder. For example: ``python prepare-data.py data/address.txt data``
 
 * ``train-autoencoder.py``: train a new autoencoder model. For example: ``python train-autoencoder.py models data/vocabulary.txt data/train-data.npz data/valid-data.npz``
