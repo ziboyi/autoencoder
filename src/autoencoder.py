@@ -302,7 +302,8 @@ class TextAutoencoder(object):
                     'bidirectional': self.bidirectional
                     }
         metadata_path = os.path.join(directory, 'metadata.json')
-        with open(metadata_path, 'wb') as f:
+        # with open(metadata_path, 'wb') as f:
+        with open(metadata_path, 'w') as f:
             json.dump(metadata, f)
 
     @classmethod
