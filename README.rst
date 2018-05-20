@@ -28,9 +28,13 @@ Performance notes
 Scripts
 -------
 
-* ``prepare-data.py``: reads a text file and create numpy files that can be used to train an autoencoder
+* ``prepare-data.py``: reads a text file and create numpy files that can be used to train an autoencoder.
 
-* ``train-autoencoder.py``: train a new autoencoder model
+For example: ``python prepare-data.py data/address.txt data``
+
+* ``train-autoencoder.py``: train a new autoencoder model.
+
+For example: ``python train-autoencoder.py models data/vocabulary.txt data/train-data.npz data/valid-data.npz``
 
 * ``interactive.py``: run a trained autoencoder that reads input from stdin. It can be fun to test the boundaries of your trained model :)
 
