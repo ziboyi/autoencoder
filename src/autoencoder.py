@@ -317,7 +317,8 @@ class TextAutoencoder(object):
         """
         model_path = os.path.join(directory, 'model')
         metadata_path = os.path.join(directory, 'metadata.json')
-        with open(metadata_path, 'rb') as f:
+        # with open(metadata_path, 'rb') as f:
+        with open(metadata_path, 'r') as f:
             metadata = json.load(f)
         dummy_embeddings = np.empty((metadata['vocab_size'],
                                      metadata['embedding_size'],),
